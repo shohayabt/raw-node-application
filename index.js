@@ -1,5 +1,7 @@
 // Dependencies
 const http = require('http');
+const url = require('url');
+const { StringDecoder } = require('string_decoder');
 // App Object - Module Scaffolding
 const app = {};
 // Configuration
@@ -16,7 +18,7 @@ app.createServer = () => {
 // Handle Request and Response
 app.handleRequestResponse = (req, res) => {
     // Sending a response
-    res.end('HELLO PROGRAMMERS ');
+    res.end('Hello Programmer ');
 };
 // Run the server
 app.createServer();
